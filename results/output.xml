@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-18T14:03:42.418699" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Robot" source="C:\Users\formation\Desktop\robot_robot">
+<suite id="s1-s1" name="Robot" source="C:\Users\formation\Desktop\robot_robot\robot">
+<suite id="s1-s1-s1" name="Calculatrice" source="C:\Users\formation\Desktop\robot_robot\robot\calculatrice.robot">
+<test id="s1-s1-s1-t1" name="Addition Test" line="5">
+<kw name="Addition" owner="calculatrice">
+<msg time="2024-01-18T14:03:42.463219" level="INFO">${result} = 8.0</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:42.463219" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:42.465224" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>8</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:42.464275" elapsed="0.000949"/>
+</kw>
+<doc>test d'addition</doc>
+<status status="PASS" start="2024-01-18T14:03:42.460989" elapsed="0.005242"/>
+</test>
+<test id="s1-s1-s1-t2" name="Soustraction Test" line="11">
+<kw name="Soustraction" owner="calculatrice">
+<msg time="2024-01-18T14:03:42.469225" level="INFO">${result} = 2.0</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:42.469225" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:42.470225" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>2</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:42.470225" elapsed="0.001001"/>
+</kw>
+<doc>test de  soustraction</doc>
+<status status="PASS" start="2024-01-18T14:03:42.467227" elapsed="0.003999"/>
+</test>
+<test id="s1-s1-s1-t3" name="Multiplication Test" line="16">
+<kw name="Multiplication" owner="calculatrice">
+<msg time="2024-01-18T14:03:42.473224" level="INFO">${result} = 15.0</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:42.473224" elapsed="0.001001"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:42.475225" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>15</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:42.474225" elapsed="0.001000"/>
+</kw>
+<doc>test de la multiplication</doc>
+<status status="PASS" start="2024-01-18T14:03:42.472229" elapsed="0.003996"/>
+</test>
+<test id="s1-s1-s1-t4" name="Division Test" line="21">
+<kw name="Division" owner="calculatrice">
+<msg time="2024-01-18T14:03:42.478737" level="INFO">${result} = 2.0</msg>
+<var>${result}</var>
+<arg>6</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:42.478737" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:42.479755" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>2</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:42.479755" elapsed="0.000994"/>
+</kw>
+<doc>test de la division</doc>
+<status status="PASS" start="2024-01-18T14:03:42.477228" elapsed="0.003521"/>
+</test>
+<test id="s1-s1-s1-t5" name="Division by Zero Test" line="26">
+<kw name="Division" owner="calculatrice">
+<msg time="2024-01-18T14:03:42.483752" level="INFO">${result} = Division par 0 impossible</msg>
+<var>${result}</var>
+<arg>6</arg>
+<arg>0.0</arg>
+<status status="PASS" start="2024-01-18T14:03:42.483752" elapsed="0.000993"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Division par 0 impossible</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-01-18T14:03:42.485746" elapsed="0.001040"/>
+</kw>
+<doc>test de la division par 0</doc>
+<status status="PASS" start="2024-01-18T14:03:42.481756" elapsed="0.005030"/>
+</test>
+<status status="PASS" start="2024-01-18T14:03:42.453993" elapsed="0.034752"/>
+</suite>
+<status status="PASS" start="2024-01-18T14:03:42.450988" elapsed="0.040867"/>
+</suite>
+<status status="PASS" start="2024-01-18T14:03:42.426704" elapsed="0.067180"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Robot Robot">Robot Robot</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Robot">Robot Robot.Robot</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1" name="Calculatrice">Robot Robot.Robot.Calculatrice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

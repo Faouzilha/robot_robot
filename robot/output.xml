@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-18T14:03:24.353115" rpa="false" schemaversion="5">
+<suite id="s1" name="Calculatrice" source="C:\Users\formation\Desktop\robot_robot\robot\calculatrice.robot">
+<test id="s1-t1" name="Addition Test" line="5">
+<kw name="Addition" owner="calculatrice">
+<msg time="2024-01-18T14:03:24.373630" level="INFO">${result} = 8.0</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:24.373630" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:24.374641" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>8</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:24.374641" elapsed="0.000000"/>
+</kw>
+<doc>test d'addition</doc>
+<status status="PASS" start="2024-01-18T14:03:24.373288" elapsed="0.001353"/>
+</test>
+<test id="s1-t2" name="Soustraction Test" line="11">
+<kw name="Soustraction" owner="calculatrice">
+<msg time="2024-01-18T14:03:24.376638" level="INFO">${result} = 2.0</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:24.376638" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:24.377636" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>2</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:24.376638" elapsed="0.000998"/>
+</kw>
+<doc>test de  soustraction</doc>
+<status status="PASS" start="2024-01-18T14:03:24.376638" elapsed="0.000998"/>
+</test>
+<test id="s1-t3" name="Multiplication Test" line="16">
+<kw name="Multiplication" owner="calculatrice">
+<msg time="2024-01-18T14:03:24.378636" level="INFO">${result} = 15.0</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:24.378636" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:24.378636" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>15</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:24.378636" elapsed="0.000000"/>
+</kw>
+<doc>test de la multiplication</doc>
+<status status="PASS" start="2024-01-18T14:03:24.378636" elapsed="0.001001"/>
+</test>
+<test id="s1-t4" name="Division Test" line="21">
+<kw name="Division" owner="calculatrice">
+<msg time="2024-01-18T14:03:24.379637" level="INFO">${result} = 2.0</msg>
+<var>${result}</var>
+<arg>6</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-01-18T14:03:24.379637" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T14:03:24.380635" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>2</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T14:03:24.380635" elapsed="0.000000"/>
+</kw>
+<doc>test de la division</doc>
+<status status="PASS" start="2024-01-18T14:03:24.379637" elapsed="0.000998"/>
+</test>
+<test id="s1-t5" name="Division by Zero Test" line="26">
+<kw name="Division" owner="calculatrice">
+<msg time="2024-01-18T14:03:24.381636" level="INFO">${result} = Division par 0 impossible</msg>
+<var>${result}</var>
+<arg>6</arg>
+<arg>0.0</arg>
+<status status="PASS" start="2024-01-18T14:03:24.381636" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Division par 0 impossible</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-01-18T14:03:24.381636" elapsed="0.000000"/>
+</kw>
+<doc>test de la division par 0</doc>
+<status status="PASS" start="2024-01-18T14:03:24.381636" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-01-18T14:03:24.355107" elapsed="0.027532"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Calculatrice">Calculatrice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
